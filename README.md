@@ -2,9 +2,9 @@
 
 This workshop overall contains **three sections**, feel free to skip a section if you already know how it works:
 
-- Using **Docker** Containers (starts from [Installing Docker](#Installing Docker))
-- Using **MySQL** as Database (starts from [Using MySQL](#Using MySQL))
-- Using **Spring** as Backend Server (starts from [Using Spring as Backend](#Using Spring as Backend))
+- Using **Docker** Containers (starts from [Installing Docker](#Installing-Docker))
+- Using **MySQL** as Database (starts from [Using MySQL](#Using-MySQL))
+- Using **Spring** as Backend Server (starts from [Using Spring as Backend](#Using-Spring-as-Backend))
 
 # Installing Docker
 
@@ -97,7 +97,7 @@ For **Windows WSL** Users:
 
 > **Downloads and Prerequisites:**
 >
-> - A working `docker` command line tool (see [Installing Docker](#Installing Docker))
+> - A working `docker` command line tool (see [Installing Docker](#Installing-Docker))
 
 **Goal:**
 
@@ -308,7 +308,7 @@ However, this is **not yet satisfactory**:
 
 At this point, if you are in a hurry, you could:
 
-- jump right to the section [Using Spring as Backend](#Using Spring as Backend)
+- jump right to the section [Using Spring as Backend](#Using-Spring-as-Backend)
 - if you know your own backend stuff, connect to and use this containerized `MySQL` right away!
 
 However, you should bare in mind **one last problem**:
