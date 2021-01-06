@@ -40,7 +40,7 @@ For **Linux** Users:
 
 - then, to make sure `docker` daemon is running, run:
 
-  ```
+  ```bash
   systemctl start docker
   ```
 
@@ -67,10 +67,10 @@ For **Windows WSL** Users:
 >     wsl -l -v
 >     ```
 >
->       - to upgrade your existing Linux distro to v2, run:
+>   - to upgrade your existing Linux distro to v2, run:
 >
->     ```
->    wsl --set-version (distro name) 2
+>     ```bash
+>     wsl --set-version (distro name) 2
 >     ```
 
 1. Run the `Docker` application you just downloaded
