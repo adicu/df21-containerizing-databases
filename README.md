@@ -1,3 +1,21 @@
+# Table of Contents
+
+- [Foreword](#foreword)
+- [Installing Docker](#installing-docker)
+- [Docker Containers](#docker-containers)
+  * [Setting up MySQL and Redis Containers](#setting-up-mysql-and-redis-containers)
+  * [Running Containers in Background](#running-containers-in-background)
+  * [Persistence in Containers](#persistence-in-containers)
+- [Docker Compose](#docker-compose)
+  * [Using Docker Compose](#using-docker-compose)
+- [Using MySQL](#using-mysql)
+  * [Setting up MySQL Container](#setting-up-mysql-container)
+  * [Using MySQL Tables](#using-mysql-tables)
+- [Using Spring as Backend](#using-spring-as-backend)
+  * [Maven and Project Structure](#maven-and-project-structure)
+  * [Basic CRUD Operations](#basic-crud-operations)
+- [Epilogue](#epilogue)
+
 # Foreword
 
 This workshop overall contains **three sections**, feel free to skip a section if you already know how it works:
