@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+    cust-mysql:
+        image: mysql/mysql-server
+        volumes:
+            - ./data:/var/lib/mysql
+        container_name: cust-mysql
+        ports:
+            - "3306:3306"
+        tty: true
+
