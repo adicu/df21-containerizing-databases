@@ -591,17 +591,29 @@ Since there is quite a lot going on for configuring your `docker-compose.yml`, I
 
    > **Note:**
    >
-   > - If you want to 
+   > - If you want to connect to your database from a remote host, you might need to configure MySQL to allow your IP (by default, only localhost works):
    >
    >   ```bash
    >   mysql> CREATE USER 'root'@'172.18.0.1' IDENTIFIED BY 'devfest2021';
    >   Query OK, 0 rows affected (0.01 sec)
+   >   ```
    >   
+   >   where:
+   >   
+   >   - this creates a new user `root` for IP `172.18.0.1` with the password `devfest2021`
+   >   
+   >   then:
+   >   
+   >   ```bash
    >   mysql> GRANT ALL PRIVILEGES ON test.* TO 'root'@'172.18.0.1';
    >   Query OK, 0 rows affected (0.01 sec)
    >   ```
-   >
    >   
+   >   where:
+   >   
+   >   - this grants the user to use everything in the `test` database
+   >
+   
 
    Now, you switch to the database you just created with `USE <databaseName>`
 
