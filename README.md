@@ -5,7 +5,7 @@
 - [Docker Containers](#docker-containers)
   * [Setting up MySQL and Redis Containers](#setting-up-mysql-and-redis-containers)
   * [Running Containers in Background](#running-containers-in-background)
-  * [Persistence in Containers](#persistence-in-containers)
+  * [Data Persistence in Containers](#data-persistence-in-containers)
 - [Docker Compose](#docker-compose)
   * [Using Docker Compose](#using-docker-compose)
 - [Using MySQL](#using-mysql)
@@ -334,7 +334,7 @@ However, you should bare in mind **one last problem**:
 - because the containers are also isolated, its file system is also "isolated" from your laptop's file system! This means that if you `stop/kill` the containers, and then restart the docker application, all your **data inside the container might be gone**!
 - to solve this issue, you can setup a volume mount, which is covered in the next section.
 
-## Persistence in Containers
+## Data Persistence in Containers
 
 > **Downloads and Prerequisites:**
 >
@@ -351,7 +351,7 @@ However, you should bare in mind **one last problem**:
    *For Example: Persisting your MySQL Data*
 
    ```bash
-   docker run -v /code/testMount:/var/opt/mysql --detach --publish 3306:3306 --name=test-mysql mysql/mysql-server
+   docker run -v /code/testMount:/var/lib/mysql --detach --publish 3306:3306 --name=test-mysql mysql/mysql-server
    ```
 
    where:
