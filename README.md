@@ -780,8 +780,18 @@ Since there is quite a lot going on for configuring your `docker-compose.yml`, I
                                AdiWorkshopApplicationTests.java
    ```
 
-   then, if you have your `maven` installed correctly, run the `package` goal:
-
+   then, we need to **configure** your MySQL credentials for Spring to connect to. To do this, locate the ` application.yml` file:
+   ```yml
+   spring:
+    datasource:
+      type: com.zaxxer.hikari.HikariDataSource
+      username: root # mysql username
+      password: devfest2021  # mysql password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test # jdbc:mysql://<mysql-server-address>:<port>/<database>
+   ```
+   after that, if you have your `maven` installed correctly, run the `package` goal:
+   
    ```bash
    mvn package
    ```
